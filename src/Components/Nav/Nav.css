@@ -24,15 +24,32 @@ body {
 .box {
   flex-direction: column;
   border: none;
-  width: 60%;
-  margin: 0.5vw 0q;
+  width: 40%;
+  margin: 5% auto;
 }
 .content {
   height: 100%;
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 50%;
 }
+
+.content .input{
+  display:flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+
+.content .inputs{
+  display: flex;
+  column-gap: 24px;
+}
+
+.inputs .input{
+  width:47%;
+}
+
 .box .steps ul {
   overflow: hidden;
   display: flex;
@@ -93,7 +110,7 @@ body {
 }
 .box .step-component {
   padding: 20px;
-  height: 200px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,7 +124,6 @@ body {
 }
 
 button {
-  margin-top: 1.5vw;
   font-size: 1.3541666666666667vw;
   color: #fff;
   padding: 0.5208333333333334vw 2.0833333333333335vw;

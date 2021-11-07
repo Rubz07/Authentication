@@ -3,11 +3,53 @@ import bgimage from "../../Assets/Images/bg.png";
 import "./Nav.css"
 const firstComponent = () => {
   return (
-    <div classNam="content">
-     <input type="text"></input>
-     <input type="text"></input>
-     <input type="text"></input>
-     <input type="text"></input>
+    <div className="content">
+
+      {/* edhinte input props aakki label pass cheyy */}
+      <div className="input">
+        <div className="label">
+          First name
+        </div>
+        <input type="text"></input>
+      </div>
+
+      <div className="input">
+        <div className="label">
+          First name
+        </div>
+        <input type="text"></input>
+      </div>
+
+      <div className="input">
+        <div className="label">
+          First name
+        </div>
+        <input type="text"></input>
+      </div>
+
+      {/* one line 2 text fields */}
+      <div className="inputs">
+        <div className="input">
+          <div className="label">
+            First name
+          </div>
+          <input type="text"></input>
+        </div>
+        <div className="input">
+          <div className="label">
+            First name
+          </div>
+          <input type="text"></input>
+        </div>
+      </div>
+
+      <div className="input">
+        <div className="label">
+          First name
+        </div>
+        <input type="text"></input>
+      </div>
+
     </div>
   );
 };
