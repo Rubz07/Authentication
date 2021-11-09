@@ -1,9 +1,11 @@
 import React from "react";
-import bgimage from "../../Assets/Images/bg.png";
+import bgimage from "../../Assets/Images/work.png";
 function banner() {
   return (
-    <div className="bannerClasse">
-      <img className="bannerImage" alt="bannerimage" src={bgimage}></img>
+    <div className="App">
+      <div className="bannerClasse">
+        <img className="bannerImage" alt="bannerimage" src={bgimage}></img>
+      </div>
     </div>
   );
 }

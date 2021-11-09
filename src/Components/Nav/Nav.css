@@ -15,6 +15,7 @@ body {
   flex: 1;
   width: 50%;
   height: 100%;
+  justify-content: center;
 }
 .bannerImage {
   width: 100%;
@@ -23,9 +24,10 @@ body {
 
 .box {
   flex-direction: column;
-  border: none;
+  box-shadow: -7px 14px 28px rgb(71, 70, 70, 0.445);
   width: 40%;
   margin: 5% auto;
+  border-radius: 10px;
 }
 .content {
   height: 100%;
@@ -35,19 +37,54 @@ body {
   width: 50%;
 }
 
-.content .input{
-  display:flex;
+.content .input {
+  display: flex;
   flex-direction: column;
   row-gap: 6px;
 }
 
-.content .inputs{
+.content .inputs {
   display: flex;
   column-gap: 24px;
 }
 
-.inputs .input{
-  width:47%;
+.inputs .input {
+  width: 47%;
+}
+
+.input input[type="text"] {
+  text-indent: 24px;
+}
+.input input[type="email"] {
+  text-indent: 24px;
+}
+.input input[type="tel"] {
+  text-indent: 24px;
+}
+.input input[type="address"] {
+  text-indent: 24px;
+}
+
+.input i {
+  position: absolute;
+  margin: 2.5% 0 0 4px;
+}
+
+.rad {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.radios {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
 }
 
 .box .steps ul {
@@ -60,7 +97,7 @@ body {
   padding: 10px 0 15px 45px;
   position: relative;
   background: #f5f5f5;
-  width: 10vw;
+  width: 10vw; /* 10vw */
 }
 .box .steps ul li div span {
   font-size: 13px;
@@ -110,12 +147,10 @@ body {
 }
 .box .step-component {
   padding: 20px;
-  height: auto;
+  height: 65vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: aqua;
 }
 .box .btn-component {
   padding: 20px;
@@ -132,9 +167,24 @@ button {
   cursor: pointer;
   user-select: none;
   font-family: "NunitoSB";
-  background: linear-gradient(94.35deg, #9d86ff 0%, #785ee1 99.44%);
+  background: #167495;
   box-shadow: 0px 0.20833333333333334vw 0.5208333333333334vw
     rgba(139, 114, 240, 0.67);
-  border-radius: 0.5208333333333334vw;
+  border-radius: 10px;
   transition: 0.2s;
+}
+button:active {
+  transform: scale(0.97);
+  box-shadow: none;
+}
+input {
+  border: none;
+  display: block;
+  border-bottom: 1px solid gray;
+  outline: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+input:focus {
+  border-bottom: 1px solid black;
 }
